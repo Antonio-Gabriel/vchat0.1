@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    {% block head %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %} - Page</title>
+
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg" />
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/components/toast.css" />
+
+    {% endblock %}
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/fontawesome/js/all.min.js"></script>
+
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

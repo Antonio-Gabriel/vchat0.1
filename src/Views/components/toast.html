@@ -1,0 +1,23 @@
+<div class="custom-toast">
+  <div class="toast-content">
+    <div class="check">
+      <i class="fas fa-solid fa-check right"></i>
+      <i class="fa-solid fa-xmark bad"></i>
+    </div>
+
+    <div class="message">
+      <span class="text text-1">{{ state }}</span>
+      <span class="text text-2">{{ message }}</span>
+    </div>
+  </div>
+  <i class="fa-solid fa-xmark close"></i>
+
+  <div class="custom-progress"></div>
+</div>
+
+{% if handle %} {% block scripts %}
+    
+<script>
+  handleShowToastPopup();
+</script>
+{% endblock %} {% endif %}

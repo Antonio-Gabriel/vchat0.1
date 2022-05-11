@@ -1,0 +1,157 @@
+{% extends "@shared/base.html" %} 
+
+{% block title %}Search doctor{% endblock %}
+{%block head %} 
+    {{ parent() }}
+    <link rel="stylesheet" href="assets/css/search.css" />
+{% endblock %} 
+
+{% block content %}
+<header class="header">
+  <nav class="navbar navbar-expand-lg navbar-default">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.svg" alt="psicoangola logo" />
+        <div class="content">
+          <span>Psico<strong>Angola</strong></span>
+          <span>Dashboard</span>
+        </div>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"> Dashboard </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Pesquisar Psicologo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Perfil</a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            AG
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="hero-describe">
+          <h1>Pesquisar Psicólogo</h1>
+          <p>Pesquise pelas categorias de doctores</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <form action="#">
+          <div class="form-group">
+            <label for="search">Pesquisar por doctor</label>
+
+            <input type="text" class="form-control" placeholder="John Doe" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doctors">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <span> Total psicólogos: <strong>20</strong></span>
+        </div>
+      </div>
+
+      <div class="col-lg-12 mt-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="doctor-card">
+              <img src="assets/img/avatar.png" alt="doctor name" />
+              <h4>António Gabriel</h4>
+              <span>Psicologo Criminal</span>
+
+              <div class="called">
+                <a href="#">Chamar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="doctor-card">
+              <img src="assets/img/avatar.png" alt="doctor name" />
+              <h4>António Gabriel</h4>
+              <span>Psicologo Criminal</span>
+
+              <div class="called">
+                <a href="#">Chamar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="doctor-card">
+              <img src="assets/img/avatar.png" alt="doctor name" />
+              <h4>António Gabriel</h4>
+              <span>Psicologo Criminal</span>
+
+              <div class="called">
+                <a href="#">Chamar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="doctor-card">
+              <img src="assets/img/avatar.png" alt="doctor name" />
+              <h4>António Gabriel</h4>
+              <span>Psicologo Criminal</span>
+
+              <div class="called">
+                <a href="#">Chamar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %} 
+
+{% block scripts %}
+<script src="assets/js/activeMenu.js"></script>
+{% endblock %}

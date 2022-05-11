@@ -1,0 +1,27 @@
+{
+  "name": "vendor/vchat",
+  "description": "This is a video chat platform and real time chat for a psico companny.",
+  "autoload": {
+    "psr-4": {
+      "Vchat\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Antonio-Gabriel",
+      "email": "antoniocamposgabriel@gmail.com"
+    }
+  ],
+  "require": {
+    "cboden/ratchet": "^0.4.4",
+    "vlucas/phpdotenv": "^5.4",
+    "twig/twig": "^3.0",
+    "slim/slim": "3.*",
+    "twig/cssinliner-extra": "^3.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "mrsuh/php-generics": true
+    }
+  }
+}
